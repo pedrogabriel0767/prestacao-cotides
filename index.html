@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prestação de Contas da Sr Cotides</title>
 
 <link rel="stylesheet" href="styles.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 
 <body>
 
 <header>
-<h1>Prestação de Contas da Sr Cotides</h1>
+    <h1>Prestação de Contas da Sr Cotides</h1>
 </header>
 
-<section>
-<h2>Dashboard</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Saldo</h3>
+        <p id="saldo">R$ 1500,00</p>
+    </div>
 
-<div>
-💰 Saldo: R$ <span id="saldo"></span>
+    <div class="card">
+        <h3>Total Gasto</h3>
+        <p id="total">R$ 300,00</p>
+    </div>
+
+    <div class="card">
+        <h3>Compras</h3>
+        <p id="quantidade">2</p>
+    </div>
 </div>
 
-<div>
-🧾 Total gastos: R$ <span id="total"></span>
-</div>
+<h2>Compras Recentes</h2>
 
-</section>
-
-<canvas id="chart"></canvas>
-
-<table border="1">
+<table>
 <thead>
 <tr>
 <th>Estabelecimento</th>
@@ -38,7 +41,9 @@
 <th>Data</th>
 </tr>
 </thead>
-<tbody></tbody>
+
+<tbody id="tabelaCompras">
+</tbody>
 </table>
 
 <script src="app.js"></script>

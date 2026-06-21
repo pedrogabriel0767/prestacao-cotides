@@ -1,23 +1,24 @@
-let compras = [
-  {estabelecimento:"Mercado", valor:100, data:"2026-06-21"},
-  {estabelecimento:"Farmácia", valor:200, data:"2026-06-20"}
+const compras = [
+    {
+        estabelecimento: "Mercado",
+        valor: 100,
+        data: "21/06/2026"
+    },
+    {
+        estabelecimento: "Farmácia",
+        valor: 200,
+        data: "20/06/2026"
+    }
 ];
 
-let saldo = 1500;
+const tabela = document.getElementById("tabelaCompras");
 
-document.getElementById("saldo").innerText = saldo;
-
-let total = compras.reduce((a,b)=>a+b.valor,0);
-document.getElementById("total").innerText = total;
-
-let tbody = document.querySelector("tbody");
-
-compras.forEach(c=>{
-  tbody.innerHTML += `
+compras.forEach(compra => {
+    tabela.innerHTML += `
     <tr>
-      <td>${c.estabelecimento}</td>
-      <td>${c.valor}</td>
-      <td>${c.data}</td>
+        <td>${compra.estabelecimento}</td>
+        <td>R$ ${compra.valor}</td>
+        <td>${compra.data}</td>
     </tr>
-  `;
+    `;
 });
