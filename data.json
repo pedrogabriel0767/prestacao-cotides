@@ -1,0 +1,19 @@
+{
+  "saldo": 1500,
+  "compras": [
+    {
+      "id": 1,
+      "estabelecimento": "Mercado",
+      "categoria": "Alimentação",
+      "valor": 100,
+      "data": "2026-06-21"
+    },
+    {
+      "id": 2,
+      "estabelecimento": "Farmácia",
+      "categoria": "Saúde",
+      "valor": 200,
+      "data": "2026-06-20"
+    }
+  ]
+}
