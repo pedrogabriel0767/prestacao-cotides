@@ -1,19 +1,28 @@
 {
-  "saldo": 1500,
-  "compras": [
+  "saldoAnterior": 1500,
+  "saldoAtual": 1300,
+  "poupanca": {
+    "valor": 5000,
+    "descricao": "Reserva da família da Sr Cotides"
+  },
+  "movimentacoes": [
     {
-      "id": 1,
-      "estabelecimento": "Mercado",
-      "categoria": "Alimentação",
+      "tipo": "saida",
+      "categoria": "Mercado",
       "valor": 100,
       "data": "2026-06-21"
     },
     {
-      "id": 2,
-      "estabelecimento": "Farmácia",
-      "categoria": "Saúde",
+      "tipo": "saida",
+      "categoria": "Farmácia",
       "valor": 200,
       "data": "2026-06-20"
+    },
+    {
+      "tipo": "entrada",
+      "categoria": "Serviços",
+      "valor": 2000,
+      "data": "2026-06-19"
     }
   ]
 }
